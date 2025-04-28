@@ -1,0 +1,23 @@
+Create database Lenis_BD;
+
+USE Lenis_BD;
+create table estudiante(
+id int primary key,
+nombre varchar(50),
+fechaNacimiento date
+);
+
+select * from estudiante;
+
+insert into estudiante (id,nombre,fechaNacimiento) values 
+(1,'Valentino','2006-11-10');,(2,'Damir','2006-11-22'); 
+
+delete from estudiante where id=1;
+select * from estudiante;
+
+CREATE TABLE Materias (
+  Codigo INT PRIMARY KEY,
+  Nombre VARCHAR(50)
+);
+select * from Materias;
+insert into Materias (Codigo,Nombre) values(20,'Base de Datos');
